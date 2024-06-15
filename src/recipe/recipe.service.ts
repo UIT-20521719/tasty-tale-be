@@ -138,7 +138,7 @@ export class RecipeService {
         recipe.reviews.reduce((total, review) => total + review.rating, 0) /
         (recipe.reviews.length || 1),
       likedUsers: undefined,
-      reviews: undefined,
+      reviews: recipe.reviews,
     };
   }
 }
